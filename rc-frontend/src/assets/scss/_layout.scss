@@ -1,0 +1,19 @@
+#app {
+  height: 100vh;
+}
+
+.footer-section {
+  @extend .py-3;
+  @extend .d-flex;
+  @extend .bg-dark;
+  @extend .text-white;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+}
+
+.navbar {
+  border-bottom: $component-borders;
+}
+.footer-section {
+  border-top: $component-borders;
+}

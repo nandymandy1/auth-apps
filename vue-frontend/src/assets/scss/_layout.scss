@@ -1,0 +1,22 @@
+#app {
+  height: 100vh;
+  @extend .d-flex;
+  @extend .flex-column;
+}
+
+footer {
+  @extend .py-3;
+  @extend .d-flex;
+  @extend .bg-dark;
+  @extend .text-white;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+}
+
+.navbar {
+  border-bottom: $component-borders;
+}
+
+footer {
+  border-top: $component-borders;
+}

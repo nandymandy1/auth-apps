@@ -1,0 +1,11 @@
+.form-control {
+  border-radius: 1px !important;
+  &:focus {
+    border-color: $custom-primary;
+    box-shadow: 0 0 0 0.2rem rgba($custom-primary, 0.25);
+  }
+}
+.form-label {
+  font-weight: bold;
+  color: $form-labels;
+}

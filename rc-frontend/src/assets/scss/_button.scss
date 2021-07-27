@@ -1,0 +1,11 @@
+.btn {
+  border-radius: 2px !important;
+}
+
+.btn-primary {
+  border-color: $custom-primary;
+  background-color: rgba($custom-primary, 0.9);
+  &:hover {
+    background-color: rgba($custom-primary, 1) !important;
+  }
+}

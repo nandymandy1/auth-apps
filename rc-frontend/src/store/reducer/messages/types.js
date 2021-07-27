@@ -1,0 +1,6 @@
+const MESSAGE_TYPES = {
+  SET_MESSAGE: "SET_MESSAGE",
+  RESET_MESSAGE: "RESET_MESSAGE",
+};
+
+export default MESSAGE_TYPES;

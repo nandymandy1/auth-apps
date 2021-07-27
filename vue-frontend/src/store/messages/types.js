@@ -1,0 +1,6 @@
+const MESSAGE_TYPES = {
+  SET_ALERT: "SET_ALERT",
+  RESET_ALERT: "RESET_ALERT",
+};
+
+export default MESSAGE_TYPES;
