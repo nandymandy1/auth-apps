@@ -1,4 +1,4 @@
-import store from "../store";
+import { dispatchers } from "@/services";
 import DashboardView from "@/views/Dashboard/index.vue";
 
 const DashboardRouter = {
@@ -22,7 +22,7 @@ const DashboardRouter = {
       path: "logout",
       name: "Logout",
       beforeEnter: (to, from, nxt) => {
-        store.dispatch("auth/logoutUser");
+        dispatchers("auth", "logoutUser");
         nxt();
       },
     },

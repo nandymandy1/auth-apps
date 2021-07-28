@@ -65,8 +65,8 @@
 </template>
 
 <script>
-import { useStore } from "vuex";
 import { ref, computed } from "vue";
+import { dispatchers, getters } from "@/services";
 
 export default {
   setup() {
@@ -77,10 +77,8 @@ export default {
       name: "",
     });
 
-    const store = useStore();
-    const authLoading = computed(() => store.getters["auth/isAuth"]);
-
-    const registerNow = () => store.dispatch("auth/registerUser", user.value);
+    const authLoading = computed(() => getters("auth", "isAuth"));
+    const registerNow = () => dispatchers("auth", "registerUser", user.value);
 
     return {
       user,
